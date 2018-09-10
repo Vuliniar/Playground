@@ -1,0 +1,285 @@
+// This is the core sass file to edit our CVS project
+
+// Including Font Awesome Fonts
+
+@import '../font-awesome/fontawesome';
+@import '../font-awesome/regular';
+@import '../font-awesome/solid';
+@import '../font-awesome/brands';
+
+// Including Google Fonts
+   @font-face {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 100;
+    src: local('Roboto Thin'), local('Roboto-Thin'),
+        url('fonts/roboto-v18-latin_cyrillic_cyrillic-ext_latin-ext-100.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
+        url('fonts/roboto-v18-latin_cyrillic_cyrillic-ext_latin-ext-100.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+  }
+  @font-face {
+    font-family: 'Roboto';
+    font-style: italic;
+    font-weight: 100;
+    src: local('Roboto Thin Italic'), local('Roboto-ThinItalic'),
+         url('fonts/roboto-v18-latin_cyrillic_cyrillic-ext_latin-ext-100italic.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
+         url('fonts/roboto-v18-latin_cyrillic_cyrillic-ext_latin-ext-100italic.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+  }
+  @font-face {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 300;
+    src: local('Roboto Light'), local('Roboto-Light'),
+         url('fonts/roboto-v18-latin_cyrillic_cyrillic-ext_latin-ext-300.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
+         url('fonts/roboto-v18-latin_cyrillic_cyrillic-ext_latin-ext-300.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+  }
+  @font-face {
+    font-family: 'Roboto';
+    font-style: italic;
+    font-weight: 300;
+    src: local('Roboto Light Italic'), local('Roboto-LightItalic'),
+         url('fonts/roboto-v18-latin_cyrillic_cyrillic-ext_latin-ext-300italic.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
+         url('fonts/roboto-v18-latin_cyrillic_cyrillic-ext_latin-ext-300italic.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+  }
+  @font-face {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    src: local('Roboto'), local('Roboto-Regular'),
+         url('fonts/roboto-v18-latin_cyrillic_cyrillic-ext_latin-ext-regular.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
+         url('fonts/roboto-v18-latin_cyrillic_cyrillic-ext_latin-ext-regular.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+  }
+  @font-face {
+    font-family: 'Roboto';
+    font-style: italic;
+    font-weight: 400;
+    src: local('Roboto Italic'), local('Roboto-Italic'),
+         url('fonts/roboto-v18-latin_cyrillic_cyrillic-ext_latin-ext-italic.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
+         url('fonts/roboto-v18-latin_cyrillic_cyrillic-ext_latin-ext-italic.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+  }
+  @font-face {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 500;
+    src: local('Roboto Medium'), local('Roboto-Medium'),
+         url('fonts/roboto-v18-latin_cyrillic_cyrillic-ext_latin-ext-500.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
+         url('fonts/roboto-v18-latin_cyrillic_cyrillic-ext_latin-ext-500.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+  }
+  @font-face {
+    font-family: 'Roboto';
+    font-style: italic;
+    font-weight: 500;
+    src: local('Roboto Medium Italic'), local('Roboto-MediumItalic'),
+         url('fonts/roboto-v18-latin_cyrillic_cyrillic-ext_latin-ext-500italic.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
+         url('fonts/roboto-v18-latin_cyrillic_cyrillic-ext_latin-ext-500italic.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+  }
+  @font-face {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 700;
+    src: local('Roboto Bold'), local('Roboto-Bold'),
+         url('fonts/roboto-v18-latin_cyrillic_cyrillic-ext_latin-ext-700.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
+         url('fonts/roboto-v18-latin_cyrillic_cyrillic-ext_latin-ext-700.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+  }
+  @font-face {
+    font-family: 'Roboto';
+    font-style: italic;
+    font-weight: 700;
+    src: local('Roboto Bold Italic'), local('Roboto-BoldItalic'),
+         url('fonts/roboto-v18-latin_cyrillic_cyrillic-ext_latin-ext-700italic.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
+         url('fonts/roboto-v18-latin_cyrillic_cyrillic-ext_latin-ext-700italic.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+  }
+  @font-face {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 900;
+    src: local('Roboto Black'), local('Roboto-Black'),
+         url('fonts/roboto-v18-latin_cyrillic_cyrillic-ext_latin-ext-900.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
+         url('fonts/roboto-v18-latin_cyrillic_cyrillic-ext_latin-ext-900.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+  }
+  @font-face {
+    font-family: 'Roboto';
+    font-style: italic;
+    font-weight: 900;
+    src: local('Roboto Black Italic'), local('Roboto-BlackItalic'),
+         url('fonts/roboto-v18-latin_cyrillic_cyrillic-ext_latin-ext-900italic.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
+         url('fonts/roboto-v18-latin_cyrillic_cyrillic-ext_latin-ext-900italic.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+  }
+
+  // Helpers
+
+    .margin-before-small {
+        margin-top: 10px;
+    }
+
+    .margin-before-medium {
+        margin-top: 30px;
+    }
+
+    .margin-before-large {
+        margin-top: 50px;
+    }
+
+    .margin-before-extra-large {
+        margin-top: 80px;
+    }
+
+    .margin-after-small {
+        margin-bottom: 10px;
+    }
+
+    .margin-after-medium {
+        margin-bottom: 30px;
+    }
+
+    .margin-after-large {
+        margin-bottom: 50px;
+    }
+
+    .margin-after-extra-large {
+        margin-bottom: 80px;
+    }
+
+    // Main Styling
+
+  nav.navbar {
+      background-color: #dedede;
+      border-bottom: 1px solid #d6d6d6;
+      .navbar-brand {
+          img {
+              max-width: 80px;
+          }
+      }
+      .navbar-collapse {
+          form {
+              display: none;
+          }
+          .dropdown-menu {
+              min-width: 5rem;
+          }
+      }
+      &.second-navigation {
+          border: none;
+          padding-top: 0;
+          padding-bottom: 0;
+          @include media-breakpoint-up(lg) {
+            background-color: #eaeaea;
+          }
+          .navbar-collapse {
+              .navbar-nav {
+                  @include media-breakpoint-up(lg) {
+                    margin: 0 auto;
+                  }
+                  .nav-item {
+                    img {
+                        max-width: 60px;
+                    }
+                    @include media-breakpoint-up(lg) {
+                        background-color: #dedede;
+                        text-align: center;
+                        border: 1px solid #d6d6d6;
+                        display: flex;
+                        align-items: center;
+                        a {
+                            text-transform: uppercase;
+                            font-size: 14px;
+                        }
+                        &:hover,
+                        &:active,
+                        &:focus {
+                            background-color: #cecece;
+                        }
+                    }
+                    @include media-breakpoint-down(md) {
+                        &:first-child {
+                            margin-top: 1rem;
+                        }
+                    }
+                  }
+              }
+          }
+      }
+  }
+
+  main {
+      margin-top: 30px;
+  }
+
+  .box-element {
+      padding: 20px 30px;
+      background-color: #eaeaea;
+      margin-bottom: 30px;
+  }
+
+  h1, h2, h3,
+  h4, h5, h6 {
+      i {
+          display: inline-block;
+          margin-right: 7px;
+          font-size: 15px;
+          vertical-align: middle;
+          margin-top: -5px;
+          background-color: #afafaf;
+          padding: 8px 12px;
+          color: #fff;
+      }
+  }
+
+  .title {
+      margin-bottom: 1rem;
+  }
+
+  .btn {
+      font-size: 15px;
+    i {
+        display: inline-block;
+        margin-right: 7px;
+    }
+    &+.btn {
+        margin-top: 7px;
+    }
+    &.btn-red {
+        background-color: #ce0101;
+        border-color: #ce0101;
+        &:hover,
+        &:active,
+        &:focus {
+            background-color: darken(#ce0101, 5%);
+            border-color: darken(#ce0101, 5%);
+        }
+    }
+    &.btn-orange {
+        background-color: #ce6001;
+        border-color: #ce6001;
+        &:hover,
+        &:active,
+        &:focus {
+            background-color: darken(#ce6001, 5%);
+            border-color: darken(#ce6001, 5%);
+        }
+    }
+    &.btn-green {
+        background-color: #2e9802;
+        border-color: #2e9802;
+        &:hover,
+        &:active,
+        &:focus {
+            background-color: darken(#2e9802, 5%);
+            border-color: darken(#2e9802, 5%);
+        }
+    }
+  }
+
+  footer {
+      background-color: $primary;
+      color: $white;
+      padding: 10px 0;
+      p {
+          margin-bottom: 0;
+          font-size: 15px;
+          text-align: center;
+      }
+      a {
+          color: $white;
+          text-decoration: underline;
+      }
+  }

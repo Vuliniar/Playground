@@ -1,0 +1,5 @@
+// Main SCSS file which includes every other SCSS file for theme styling
+
+@import "variables/variables";
+@import "bootstrap/bootstrap";
+@import "core/core";
