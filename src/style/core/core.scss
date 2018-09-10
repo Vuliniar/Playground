@@ -281,5 +281,10 @@
       a {
           color: $white;
           text-decoration: underline;
+          &:hover,
+          &:active,
+          &:focus {
+              color: $white;
+          }
       }
   }

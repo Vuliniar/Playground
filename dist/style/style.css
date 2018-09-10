@@ -10697,3 +10697,6 @@ footer p {
 footer a {
   color: #fff;
   text-decoration: underline; }
+
+footer a:hover, footer a:active, footer a:focus {
+  color: #fff; }
