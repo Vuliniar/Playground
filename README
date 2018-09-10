@@ -1,0 +1,33 @@
+# CVS Playground
+
+Playground for new technologies like bs4, sass..
+
+### Prerequisites
+
+After cloning this to your folder, you will need to run with any server type application like, MAMP, XAMPP on localhost or 127.0.0.1.
+
+### Installing
+
+For changing sass and javascript files you need to do these steps:
+
+After starting MAMP or XAMPP on localhost you should go to folder directory where you stored index.html and run:
+
+```
+npm install
+```
+
+And after that
+
+```
+gulp watch
+```
+
+in case you are missing some of gulp dependencies:
+
+```
+npm install --save-dev gulp gulp-jshint js-hint gulp-sass gulp-clean-css gulp-concat gulp-uglify gulp-rename
+```
+
+## Authors
+
+* **Vukasin Lukic** 
