@@ -269,6 +269,12 @@
     }
   }
 
+  // Input fields
+
+  textarea {
+      resize: vertical;
+  }
+
   footer {
       background-color: $primary;
       color: $white;

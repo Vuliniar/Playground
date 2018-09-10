@@ -10684,6 +10684,9 @@ h4 i, h5 i, h6 i {
   background-color: #267f02;
   border-color: #267f02; }
 
+textarea {
+  resize: vertical; }
+
 footer {
   background-color: #00529b;
   color: #fff;
