@@ -109,82 +109,45 @@
         <main> <!-- Start of Main Content -->
             <div class="container">
                 <div class="row">
-                    <div class="col-12">
-                        <div class="title">
-                            <h3>Info o firmi</h3>
+                    <div class="col-12 margin-after-medium">
+                        <div class="login-wrapper">
+                            <div class="login-content">
+                                <form id="login-form" action="#">
+                                    <div class="title">
+                                        <h3>Prijavljivanje</h3>
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="username">Vas e-mail</label>
+                                        <input class="form-control" type="email" id="username" name="username">
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="lozinka">Vasa lozinka</label>
+                                        <input class="form-control" type="password" id="lozinka" name="lozinka">
+                                        <p class="text-right">
+                                            <a class="resetuj-lozinku" href="#">Zaboravili ste Vasu lozinku?</a>
+                                        </p>
+                                    </div>
+                                    <div class="btn-group d-flex margin-before-small">
+                                        <button type="submit" class="btn btn-primary w-100"><i class="fas fa-user"></i>Prijavite se</button>
+                                    </div>
+                                </form>
+                                <form action="#" id="reset-password">
+                                    <div class="title">
+                                        <h3>Resetuj lozinku</h3>
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="korisnicko-ime">Unesite vas e-mail</label>
+                                        <input class="form-control" type="email" id="korisnicko-ime" name="korisnicko-ime">
+                                    </div>
+                                    <div class="btn-group d-flex margin-before-small flex-wrap justify-content-center">
+                                        <button type="submit" class="btn btn-primary w-100"><i class="fas fa-user"></i>Resetujte lozinku</button>
+                                        <a href="#" class="back-to-login">ili vratite se na login</a>
+                                    </div>
+                                </form>
+                            </div>
                         </div>
                     </div>
                 </div>
-                <form action="#" class="margin-after-medium">
-                    <div class="row">
-                        <div class="col-12 col-md-6">
-                            <div class="form-group">
-                                <label for="naziv-organizacije">Naziv organizacije (klijenta)</label>
-                                <input type="text" class="form-control" name="naziv-organizacije" id="naziv-organizacije">
-                            </div>
-                            <div class="form-group">
-                                <label for="maticni-broj">Maticni broj</label>
-                                <input type="number" class="form-control" name="maticni-broj" id="maticni-broj">
-                            </div>
-                            <div class="form-group">
-                                <label for="adresa">Adresa</label>
-                                <input type="text" class="form-control" name="adresa" id="adresa">
-                            </div>
-                            <div class="form-group">
-                                <label for="mesto">Mesto</label>
-                                <input type="text" class="form-control" name="mesto" id="mesto">
-                            </div>
-                            <div class="form-group">
-                                <label for="poreski-obveznik">Da li je organizacija poreski obveznik?</label>
-                                <select class="form-control" name="poreski-obveznik" id="poreski-obveznik">
-                                    <option value="da" default>Da</option>
-                                    <option value="ne">Ne</option>
-                                </select>
-                            </div>
-                            <div class="form-group">
-                                <label for="delatnost">Glavna delatnost kompanije</label>
-                                <input type="text" class="form-control" name="delatnost" id="delatnost">
-                            </div>
-                        </div>
-                        <div class="col-12 col-md-6">
-                            <div class="form-group">
-                                <label for="pib">PIB</label>
-                                <input type="number" class="form-control" name="pib" id="pib">
-                            </div>
-                            <div class="form-group">
-                                <label for="broj-vozila">Broj vozila?</label>
-                                <input type="number" class="form-control" name="broj-vozila" id="broj-vozila">
-                            </div>
-                            <div class="form-group">
-                                <label for="postanski-broj">Postanski broj</label>
-                                <input type="number" class="form-control" name="postanski-broj" id="postanski-broj">
-                            </div>
-                            <div class="form-group">
-                                <label for="fax">Fax</label>
-                                <input type="number" class="form-control" name="fax" id="fax">
-                            </div>
-                            <div class="form-group">
-                                <label for="kontakt-email">E-mail</label>
-                                <input type="email" class="form-control" name="kontakt-email" id="kontakt-email">
-                            </div>
-                            <div class="form-group">
-                                <label for="telefon">Telefon</label>
-                                <input type="number" class="form-control" name="telefon" id="telefon">
-                            </div>
-                        </div>
-                    </div>
-                    <div class="row">
-                        <div class="col-12">
-                            <div class="form-group">
-                                <label for="napomena">Napomena</label>
-                                <textarea class="form-control" name="napomena" id="napomena" cols="30" rows="10"></textarea>
-                            </div>
-                            <div class="btn-group justify-content-end d-flex">
-                                <button type="submit" class="btn btn-primary">Posalji</button>
-                            </div>
-                        </div>
-                    </div>
-                </form>
             </div>
         </main> <!-- End of Main Content -->
 

@@ -228,6 +228,13 @@
       margin-bottom: 1rem;
   }
 
+  a {
+    i {
+        display: inline-block;
+        margin-right: 7px;
+    }
+  }
+
   .btn {
       font-size: 15px;
     i {
@@ -271,8 +278,51 @@
 
   // Input fields
 
+  form {
+      margin-bottom: 0;
+      .form-group {
+          margin-bottom: 0.5rem;
+      }
+  }
+
   textarea {
       resize: vertical;
+  }
+
+  // Login Page
+
+  .login-wrapper {
+      position: relative;
+      min-height: 500px;
+      @include media-breakpoint-down(md) {
+          min-height: 400px;
+      }
+      .login-content {
+          position: absolute;
+          left: 50%;
+          top: 50%;
+          transform: translate(-50%, -50%);
+          -webkit-transform: translate(-50%, -50%);
+          -ms-transform: translate(-50%, -50%);
+          width: 500px;
+          background-color: $white;
+          padding: 20px 20px;
+          @include media-breakpoint-down(xs) {
+              width: 100%;
+          }
+      }
+      #reset-password {
+          display: none;
+      }
+      .resetuj-lozinku {
+          font-style: italic;
+          font-size: 14px;
+      }
+      .back-to-login {
+          font-size: 14px;
+          font-style: italic;
+          margin-top: 10px;
+      }
   }
 
   footer {
