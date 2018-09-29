@@ -10681,7 +10681,7 @@ h4 i, h5 i, h6 i,
 .h4 i, .h5 i, .h6 i {
   display: inline-block;
   margin-right: 7px;
-  font-size: 15px;
+  font-size: 65%;
   vertical-align: middle;
   margin-top: -5px; }
 
@@ -10700,27 +10700,6 @@ a i {
 
 .ce-headline-left {
   text-align: left; }
-
-.color-green {
-  color: #2e9802; }
-
-.color-pink {
-  color: #ff2df9; }
-
-.color-purple {
-  color: #7b028a; }
-
-.color-yellow {
-  color: #ffe216; }
-
-.color-orange {
-  color: #ce6001; }
-
-.color-blue {
-  color: #00529b; }
-
-.color-red {
-  color: #ce0101; }
 
 .bg-color--gray {
   background-color: #eaeaea;
@@ -10752,6 +10731,35 @@ a i {
 .bg-color--blue {
   color: #ffffff !important; }
 
+.bg-color--red .box-element,
+.bg-color--orange .box-element,
+.bg-color--blue .box-element,
+.bg-color--grey .box-element,
+.bg-color--white .box-element {
+  padding: 0;
+  background-color: transparent; }
+
+.color-green {
+  color: #2e9802; }
+
+.color-pink {
+  color: #ff2df9; }
+
+.color-purple {
+  color: #7b028a; }
+
+.color-yellow {
+  color: #ffe216; }
+
+.color-orange {
+  color: #ce6001; }
+
+.color-blue {
+  color: #00529b; }
+
+.color-red {
+  color: #ce0101; }
+
 .btn {
   font-size: 15px;
   white-space: normal; }
@@ -10775,35 +10783,33 @@ a i {
 
 .btn.btn-red {
   background-color: #ce0101;
-  border-color: #ce0101; }
+  border-color: #ce0101;
+  color: #fff; }
 
 .btn.btn-red:hover, .btn.btn-red:active, .btn.btn-red:focus {
   background-color: #b50101;
-  border-color: #b50101; }
+  border-color: #b50101;
+  color: #fff; }
 
 .btn.btn-orange {
   background-color: #ce6001;
-  border-color: #ce6001; }
+  border-color: #ce6001;
+  color: #fff; }
 
 .btn.btn-orange:hover, .btn.btn-orange:active, .btn.btn-orange:focus {
   background-color: #b55401;
-  border-color: #b55401; }
+  border-color: #b55401;
+  color: #fff; }
 
 .btn.btn-green {
   background-color: #2e9802;
-  border-color: #2e9802; }
+  border-color: #2e9802;
+  color: #fff; }
 
 .btn.btn-green:hover, .btn.btn-green:active, .btn.btn-green:focus {
   background-color: #267f02;
-  border-color: #267f02; }
-
-.bg-color--red .btn-primary {
-  background-color: #808080;
-  border-color: #808080; }
-
-.bg-color--red .btn-primary:hover, .bg-color--red .btn-primary:active, .bg-color--red .btn-primary:focus {
-  background-color: #737373;
-  border-color: #737373; }
+  border-color: #267f02;
+  color: #fff; }
 
 .breadcrumb {
   padding: 0;

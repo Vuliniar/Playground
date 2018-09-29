@@ -257,7 +257,7 @@
       i {
           display: inline-block;
           margin-right: 7px;
-          font-size: 15px;
+          font-size: 65%;
           vertical-align: middle;
           margin-top: -5px;
       }
@@ -284,27 +284,6 @@
     text-align: left;
 }
 
-.color-green {
-    color: #2e9802;
-}
-.color-pink {
-    color: #ff2df9;
-}
-.color-purple {
-    color: #7b028a;
-}
-.color-yellow {
-    color: #ffe216;
-}
-.color-orange {
-    color: #ce6001;
-}
-.color-blue {
-    color: #00529b;
-}
-.color-red {
-    color: #ce0101;
-}
 .bg-color--gray {
     background-color: #eaeaea;
     padding: 20px 30px;
@@ -338,6 +317,39 @@
     color: #ffffff !important;
 }
 
+.bg-color--red,
+.bg-color--orange,
+.bg-color--blue,
+.bg-color--grey,
+.bg-color--white {
+    .box-element {
+        padding: 0;
+        background-color: transparent;
+    }
+}
+
+.color-green {
+    color: #2e9802;
+}
+.color-pink {
+    color: #ff2df9;
+}
+.color-purple {
+    color: #7b028a;
+}
+.color-yellow {
+    color: #ffe216;
+}
+.color-orange {
+    color: #ce6001;
+}
+.color-blue {
+    color: #00529b;
+}
+.color-red {
+    color: #ce0101;
+}
+
   .btn {
       font-size: 15px;
       white-space: normal;
@@ -363,44 +375,37 @@
     &.btn-red {
         background-color: #ce0101;
         border-color: #ce0101;
+        color: #fff;
         &:hover,
         &:active,
         &:focus {
             background-color: darken(#ce0101, 5%);
             border-color: darken(#ce0101, 5%);
+            color: #fff;
         }
     }
     &.btn-orange {
         background-color: #ce6001;
         border-color: #ce6001;
+        color: #fff;
         &:hover,
         &:active,
         &:focus {
             background-color: darken(#ce6001, 5%);
             border-color: darken(#ce6001, 5%);
+            color: #fff;
         }
     }
     &.btn-green {
         background-color: #2e9802;
         border-color: #2e9802;
+        color: #fff;
         &:hover,
         &:active,
         &:focus {
             background-color: darken(#2e9802, 5%);
             border-color: darken(#2e9802, 5%);
-        }
-    }
-  }
-
-  .bg-color--red {
-    .btn-primary {
-        background-color: #808080;
-        border-color: #808080;
-        &:hover,
-        &:active,
-        &:focus {
-            background-color: darken(#808080, 5%);
-            border-color: darken(#808080, 5%);
+            color: #fff;
         }
     }
   }
