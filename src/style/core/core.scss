@@ -221,6 +221,7 @@
                         a {
                             text-transform: uppercase;
                             font-size: 14px;
+                            color: #000;
                         }
                         &:hover,
                         &:active,
@@ -259,9 +260,6 @@
           font-size: 15px;
           vertical-align: middle;
           margin-top: -5px;
-          background-color: #afafaf;
-          padding: 8px 12px;
-          color: #fff;
       }
   }
 
@@ -339,51 +337,6 @@
 .bg-color--blue {
     color: #ffffff !important;
 }
-.bg-color--red h1 i,
-.bg-color--red h2 i,
-.bg-color--red h3 i,
-.bg-color--red h4 i,
-.bg-color--red h5 i,
-.bg-color--red h6 i,
-.bg-color--red .h1 i,
-.bg-color--red .h2 i,
-.bg-color--red .h3 i,
-.bg-color--red .h4 i,
-.bg-color--red .h5 i,
-.bg-color--red .h6 i {
-    background-color: #ffffff;
-    color: #ce0101;
-}
-.bg-color--orange h1 i,
-.bg-color--orange h2 i,
-.bg-color--orange h3 i,
-.bg-color--orange h4 i,
-.bg-color--orange h5 i,
-.bg-color--orange h6 i,
-.bg-color--orange .h1 i,
-.bg-color--orange .h2 i,
-.bg-color--orange .h3 i,
-.bg-color--orange .h4 i,
-.bg-color--orange .h5 i,
-.bg-color--orange .h6 i {
-    background-color: #ffffff;
-    color: #ce6001;
-}
-.bg-color--blue h1 i,
-.bg-color--blue h2 i,
-.bg-color--blue h3 i,
-.bg-color--blue h4 i,
-.bg-color--blue h5 i,
-.bg-color--blue h6 i,
-.bg-color--blue .h1 i,
-.bg-color--blue .h2 i,
-.bg-color--blue .h3 i,
-.bg-color--blue .h4 i,
-.bg-color--blue .h5 i,
-.bg-color--blue .h6 i {
-    background-color: #ffffff;
-    color: #00529b;
-}
 
   .btn {
       font-size: 15px;
@@ -394,6 +347,18 @@
     }
     &+.btn {
         margin-top: 7px;
+    }
+    &.btn-primary {
+        background-color: #c1c1c1;
+        border-color: #c1c1c1;
+        color: #000;
+        &:hover,
+        &:active,
+        &:focus {
+            background-color: darken(#c1c1c1, 5%);
+            border-color: darken(#c1c1c1, 5%);
+            color: #000;
+        }
     }
     &.btn-red {
         background-color: #ce0101;
@@ -423,6 +388,19 @@
         &:focus {
             background-color: darken(#2e9802, 5%);
             border-color: darken(#2e9802, 5%);
+        }
+    }
+  }
+
+  .bg-color--red {
+    .btn-primary {
+        background-color: #808080;
+        border-color: #808080;
+        &:hover,
+        &:active,
+        &:focus {
+            background-color: darken(#808080, 5%);
+            border-color: darken(#808080, 5%);
         }
     }
   }
