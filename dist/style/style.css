@@ -10697,15 +10697,15 @@ form .form-group {
 textarea {
   resize: vertical; }
 
-.login-wrapper {
+.login-box {
   position: relative;
   min-height: 500px; }
 
 @media (max-width: 991.98px) {
-  .login-wrapper {
+  .login-box {
     min-height: 400px; } }
 
-.login-wrapper .login-content {
+.login-box .frame-type-login {
   position: absolute;
   left: 50%;
   top: 50%;
@@ -10717,17 +10717,65 @@ textarea {
   padding: 20px 20px; }
 
 @media (max-width: 575.98px) {
-  .login-wrapper .login-content {
+  .login-box .frame-type-login {
     width: 100%; } }
 
-.login-wrapper #reset-password {
+.login-box .frame-type-login .login-col {
+  display: flex;
+  flex-wrap: wrap; }
+
+.login-box .frame-type-login .login-col input {
+  order: 4;
+  display: block;
+  width: 100%;
+  height: calc(2.25rem + 2px);
+  padding: .375rem .75rem;
+  font-size: 1rem;
+  line-height: 1.5;
+  color: #495057;
+  background-color: #fff;
+  background-clip: padding-box;
+  border: 1px solid #ced4da;
+  border-radius: .25rem;
+  transition: border-color .15s ease-in-out,box-shadow .15s ease-in-out; }
+
+.login-box .frame-type-login .login-col label {
+  margin-bottom: 5px;
+  font-size: 14px; }
+
+.login-box .frame-type-login .login-col + div:not(.login-col) {
+  text-align: center;
+  margin-top: 15px; }
+
+.login-box .frame-type-login .login-col + div:not(.login-col) button {
+  display: inline-block;
+  font-weight: 400;
+  text-align: center;
+  white-space: nowrap;
+  vertical-align: middle;
+  user-select: none;
+  border: 1px solid transparent;
+  padding: 7px 25px;
+  font-size: 15px;
+  line-height: 1.4;
+  border-radius: .25rem;
+  transition: color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out,box-shadow .15s ease-in-out;
+  color: #fff;
+  background-color: #00529b;
+  border-color: #00529b;
+  cursor: pointer; }
+
+.login-box .frame-type-login .login-col + div:not(.login-col) button:hover, .login-box .frame-type-login .login-col + div:not(.login-col) button:active, .login-box .frame-type-login .login-col + div:not(.login-col) button:focus {
+  background-color: dark(#00529b, 10%); }
+
+.login-box #reset-password {
   display: none; }
 
-.login-wrapper .resetuj-lozinku {
+.login-box .resetuj-lozinku {
   font-style: italic;
   font-size: 14px; }
 
-.login-wrapper .back-to-login {
+.login-box .back-to-login {
   font-size: 14px;
   font-style: italic;
   margin-top: 10px; }

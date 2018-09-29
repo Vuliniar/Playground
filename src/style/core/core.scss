@@ -291,13 +291,13 @@
 
   // Login Page
 
-  .login-wrapper {
+  .login-box {
       position: relative;
       min-height: 500px;
       @include media-breakpoint-down(md) {
           min-height: 400px;
       }
-      .login-content {
+      .frame-type-login {
           position: absolute;
           left: 50%;
           top: 50%;
@@ -309,6 +309,56 @@
           padding: 20px 20px;
           @include media-breakpoint-down(xs) {
               width: 100%;
+          }
+          .login-col {
+              display: flex;
+              flex-wrap: wrap;
+              input {
+                  order: 4;
+                  display: block;
+                  width: 100%;
+                  height: calc(2.25rem + 2px);
+                  padding: .375rem .75rem;
+                  font-size: 1rem;
+                  line-height: 1.5;
+                  color: #495057;
+                  background-color: #fff;
+                  background-clip: padding-box;
+                  border: 1px solid #ced4da;
+                  border-radius: .25rem;
+                  transition: border-color .15s ease-in-out,box-shadow .15s ease-in-out;
+              }
+              label {
+                  margin-bottom: 5px;
+                  font-size: 14px;
+              }
+              +div:not(.login-col) {
+                text-align: center;
+                margin-top: 15px;
+                button {
+                    display: inline-block;
+                    font-weight: 400;
+                    text-align: center;
+                    white-space: nowrap;
+                    vertical-align: middle;
+                    user-select: none;
+                    border: 1px solid transparent;
+                    padding: 7px 25px;
+                    font-size: 15px;
+                    line-height: 1.4;
+                    border-radius: .25rem;
+                    transition: color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out,box-shadow .15s ease-in-out;
+                    color: #fff;
+                    background-color: $primary;
+                    border-color: $primary;
+                    cursor: pointer;
+                    &:hover,
+                    &:active,
+                    &:focus {
+                        background-color: dark($primary, 10%);
+                    }
+                }
+              }
           }
       }
       #reset-password {
