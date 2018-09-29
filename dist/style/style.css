@@ -10675,6 +10675,9 @@ main {
   background-color: #eaeaea;
   margin-bottom: 30px; }
 
+.box-element:last-child {
+  margin-bottom: 0; }
+
 h1 i, h2 i, h3 i,
 h4 i, h5 i, h6 i,
 .h1 i, .h2 i, .h3 i,
