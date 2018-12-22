@@ -411,6 +411,18 @@
             color: #fff;
         }
     }
+    &.btn-blue {
+        background-color: #229be2;
+        border-color: #229be2;
+        color: #fff;
+        &:hover,
+        &:active,
+        &:focus {
+            background-color: darken(#229be2, 5%);
+            border-color: darken(#229be2, 5%);
+            color: #fff;
+        }
+    }
     &.btn-gallery {
         position: relative;
         &:before {

@@ -10814,6 +10814,16 @@ a i {
   border-color: #267f02;
   color: #fff; }
 
+.btn.btn-blue {
+  background-color: #229be2;
+  border-color: #229be2;
+  color: #fff; }
+
+.btn.btn-blue:hover, .btn.btn-blue:active, .btn.btn-blue:focus {
+  background-color: #1b8dcf;
+  border-color: #1b8dcf;
+  color: #fff; }
+
 .btn.btn-gallery {
   position: relative; }
 
