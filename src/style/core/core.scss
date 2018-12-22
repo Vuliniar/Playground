@@ -183,7 +183,7 @@
       border-bottom: 1px solid #d6d6d6;
       .navbar-brand {
           img {
-              max-width: 80px;
+              max-width: 110px;
           }
       }
       .navbar-collapse {
@@ -409,6 +409,19 @@
             background-color: darken(#2e9802, 5%);
             border-color: darken(#2e9802, 5%);
             color: #fff;
+        }
+    }
+    &.btn-gallery {
+        position: relative;
+        &:before {
+            content: '';
+            left: -1px;
+            top: 5px;
+            bottom: 5px;
+            width: 2px;
+            background-color: #55b5d2;
+            position: absolute;
+            display: inline-block;
         }
     }
   }

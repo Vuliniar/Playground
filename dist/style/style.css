@@ -10623,7 +10623,7 @@ nav.navbar {
   border-bottom: 1px solid #d6d6d6; }
 
 nav.navbar .navbar-brand img {
-  max-width: 80px; }
+  max-width: 110px; }
 
 nav.navbar .navbar-collapse form {
   display: none; }
@@ -10813,6 +10813,19 @@ a i {
   background-color: #267f02;
   border-color: #267f02;
   color: #fff; }
+
+.btn.btn-gallery {
+  position: relative; }
+
+.btn.btn-gallery:before {
+  content: '';
+  left: -1px;
+  top: 5px;
+  bottom: 5px;
+  width: 2px;
+  background-color: #55b5d2;
+  position: absolute;
+  display: inline-block; }
 
 .breadcrumb {
   padding: 0;
