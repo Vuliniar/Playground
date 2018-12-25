@@ -457,6 +457,10 @@
       .btn-group {
         margin-bottom: 30px;
     }
+    input + span {
+        color: red;
+        font-size: 12px;
+    }
   }
 
   #novo-vozac + div .btn {

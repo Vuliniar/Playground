@@ -10854,6 +10854,10 @@ form .form-group {
 form .btn-group {
   margin-bottom: 30px; }
 
+form input + span {
+  color: red;
+  font-size: 12px; }
+
 #novo-vozac + div .btn {
   margin-bottom: 10px; }
 
