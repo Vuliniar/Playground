@@ -10,7 +10,17 @@ $(function() {
         $('#reset-password').hide();
         $('#login-form').fadeIn();
     });
-})
+    if ($('#rbtechadvancedform-formtype1')) {
+        $('#rbtechadvancedform-formtype1 input[type="button"]').on('click', function() {
+            if ($('#email-error').text() != '') {
+                var offsetTop = $('#email-error').offset().top;
+                $('html, body').animate({
+                    scrollTop: offsetTop - 80
+                }, 1000);
+            }
+        });
+    }
+});
 /*!
   * Bootstrap v4.1.3 (https://getbootstrap.com/)
   * Copyright 2011-2018 The Bootstrap Authors (https://github.com/twbs/bootstrap/graphs/contributors)

@@ -10,4 +10,14 @@ $(function() {
         $('#reset-password').hide();
         $('#login-form').fadeIn();
     });
-})
+    if ($('#rbtechadvancedform-formtype1')) {
+        $('#rbtechadvancedform-formtype1 input[type="button"]').on('click', function() {
+            if ($('#email-error').text() != '') {
+                var offsetTop = $('#email-error').offset().top;
+                $('html, body').animate({
+                    scrollTop: offsetTop - 80
+                }, 1000);
+            }
+        });
+    }
+});
