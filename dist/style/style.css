@@ -10618,6 +10618,9 @@ readers do not read off random characters that represent icons */
 .frame-space-after-extra-large {
   margin-bottom: 80px; }
 
+img {
+  max-width: 100%; }
+
 nav.navbar {
   background-color: #dedede;
   border-bottom: 1px solid #d6d6d6; }
