@@ -10619,7 +10619,8 @@ readers do not read off random characters that represent icons */
   margin-bottom: 80px; }
 
 img {
-  max-width: 100%; }
+  max-width: 100%;
+  height: auto; }
 
 nav.navbar {
   background-color: #dedede;
